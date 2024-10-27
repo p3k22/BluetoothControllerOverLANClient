@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <!-- Status Label and Dot -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+
+        <!-- Status Dot (Green or Red) -->
+        <View
+            android:id="@+id/statusDot"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/redcircle"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Status Text -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="155dp"
+            android:layout_height="20dp"
+            android:text="Status: Disconnected"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"/>
+
+
+    </LinearLayout>
+
+    <!-- Server IP and Port on the same line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Server IP Label and Input -->
+        <TextView
+            android:id="@+id/serverIpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP Address:"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ipEditText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:hint="IP Address"
+            android:inputType="textUri" />
+
+        <!-- Port Input -->
+        <EditText
+            android:id="@+id/portEditText"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:hint="Port"
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- AutoDetect Button -->
+    <Button
+        android:id="@+id/autoDetectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect To Client" />
+
+    <!-- Connect Button -->
+   <!-- <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_marginTop="8dp" />
+     -->
+
+    <!-- ScrollView to wrap logsTextView -->
+    <TextView
+        android:id="@+id/logsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logs:"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp" />
+    <ScrollView
+        android:id="@+id/logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/logTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </ScrollView>
+
+</LinearLayout>

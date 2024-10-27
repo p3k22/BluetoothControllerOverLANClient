@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">P3k Bluetooth Input Forwarder</string>
+    <string name="status_not_connected">Status: Not connected</string>
+    <string name="status_connected">Status: Connected</string>
+    <string name="connect_ps4_controller">Connect PS4 Controller</string>
+    <string name="input_data_placeholder">Input data will appear here…</string>
+    <string name="logs_title">Logs:\n</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected_ps4">Connected to PS4 controller</string>
+    <string name="paired_controller_not_found">Paired PS4 controller not found</string>
+    <string name="cross_button_pressed">Cross button pressed</string>
+    <string name="joystick_data">Left Stick X: %1$d, Y: %2$d</string>
+    <string name="bluetooth_permission_denied">Permission BLUETOOTH_CONNECT not granted</string>
+    <string name="error_connecting_controller">Error connecting to PS4 controller</string>
+    <string name="error_reading_controller">Error reading from PS4 controller</string>
+    <string name="connected_devices">Connected Devices:</string>
+    <string name="input_stream">%1$s\n%2$s</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+</resources>
