@@ -1,4 +1,4 @@
-﻿🎮 **Bluetooth GamePad Over LAN: Windows Server**
+﻿🎮 **Bluetooth GamePad Over LAN: Android Client**
 
 Easily transform your Android phone into a GamePad, sending Bluetooth inputs directly to your PC over your local network. Perfect for when you need a controller on the fly, with seamless setup and operation, without the need to buy a Bluetooth USB adapter.
 
@@ -35,12 +35,12 @@ ViGEmBus Driver: Enables emulation of your Bluetooth GamePad on Windows, creatin
 *Installation & Setup*
 
 - 
-    Download the Windows server build from this repository and install it onto you pc.
+    Download the Android client build from this repository and install it onto your Android device.
 -
-    Download the latest Android build from the BluetoothControllerOverLANClient repository and install it on your Android device.
+    Download the latest Windows Server build from the BluetoothControllerOverLANServer repository and install it on your PC.
 
        
-       https://github.com/p3k22/P3k-Bluetooth-GamePad-Over-LAN-Client
+       https://github.com/p3k22/P3k-Bluetooth-GamePad-Over-LAN-Server
        
     Run the server on your PC, and let your Android app automatically find it over the network.
     
