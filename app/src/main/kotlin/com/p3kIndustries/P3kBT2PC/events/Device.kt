@@ -57,11 +57,6 @@ class Device(private val logger: Logger?) {
                     KeyEvent.KEYCODE_BUTTON_START -> input.start = if (isKeyDown) 1 else 0
                     KeyEvent.KEYCODE_BUTTON_THUMBL -> input.leftStickButton = if (isKeyDown) 1 else 0
                     KeyEvent.KEYCODE_BUTTON_THUMBR -> input.rightStickButton = if (isKeyDown) 1 else 0
-                    // Uncomment if you want to handle D-pad button events
-                    // KeyEvent.KEYCODE_DPAD_UP -> input.dpadUp = if (isKeyDown) 1 else 0
-                    // KeyEvent.KEYCODE_DPAD_DOWN -> input.dpadDown = if (isKeyDown) 1 else 0
-                    // KeyEvent.KEYCODE_DPAD_LEFT -> input.dpadLeft = if (isKeyDown) 1 else 0
-                    // KeyEvent.KEYCODE_DPAD_RIGHT -> input.dpadRight = if (isKeyDown) 1 else 0
                     KeyEvent.KEYCODE_BUTTON_MODE -> input.psButton = if (isKeyDown) 1 else 0
                     else -> {
                         // Handle other keys if necessary
